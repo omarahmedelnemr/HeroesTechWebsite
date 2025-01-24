@@ -62,10 +62,6 @@ header .left-video{
     color: transparent;
     content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
-
-.tripsContainer{
-    padding: 20px 100px;
-}
 .arabicText{
     direction: rtl;
 }
@@ -161,6 +157,15 @@ header .left-video{
     height: 0.3rem; /* Adjust the border height */
     background-color: currentColor; /* Matches the text color */
   }
+
+  .py-6{
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+  }
+  .py-7{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+  }
 /* .wave_top::before{
     position: absolute;
     content: "";
@@ -168,7 +173,7 @@ header .left-video{
     height: 10px;
     top: 0;
     left: 0;
-    background: url(../img/bg-header-top.png) center center repeat-x;
+    background: url(/img/bg-header-top.png) center center repeat-x;
     z-index: 1;
 
 }
@@ -183,7 +188,7 @@ header .left-video{
     bottom: 0;
     z-index: 1;
 
-    background: url(../img/bg-header-bottom.png) center center repeat-x;
+    background: url(/img/bg-header-bottom.png) center center repeat-x;
 }
 
 .wave_top_svg::before{
@@ -193,7 +198,7 @@ header .left-video{
     height: 10px;
     top: 0;
     left: 0;
-    background: url(../img/bg-header-top.svg) center center repeat-x;
+    background: url(/img/bg-header-top.svg) center center repeat-x;
     z-index: 1;
 
 }
@@ -205,10 +210,15 @@ header .left-video{
     bottom: 0;
     z-index: 1;
 
-    background: url(../img/bg-header-bottom.svg) center center repeat-x;
+    background: url(/img/bg-header-bottom.svg) center center repeat-x;
 } */
 
-
+.title{
+	border-bottom: 4px;
+    width: max-content;
+    margin: auto;
+    border-bottom-style: solid;
+}
 .courseContentOpened{
     direction: rtl;
     overflow: hidden;
@@ -222,7 +232,7 @@ header .left-video{
 
 }
 .classes-item:hover .courseContentExtraMini{
-    height:50px;
+    height:100px;
 }
 .classes-item:hover .courseContentMini{
     height:150px;
@@ -509,4 +519,11 @@ header .left-video{
 
 .footer .row{
 	margin: 0px;
+}
+
+video{
+	max-height: 850px;
+}
+.Contact_Button{
+    text-align: center;
 }
