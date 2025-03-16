@@ -1,12 +1,14 @@
 .sideImage{
     max-width: 500px;
     width: 90%;
+    border-radius: 100%;
 }
 
 .CourseSection img{
-    width: 90%;
+    width: 60%;
     margin: auto;
 }
+
 
 
 .timelineImages{
@@ -21,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     margin: 20px 0px;
     /* width: 100%; */
     flex-basis: 40%;
@@ -98,11 +100,39 @@
     font-size: 1.5rem;
 }
 
-
-
-
-@media (max-width:1500px) {
-    
+.w-80{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.right_section{
+    width: 50%;
+    padding: 0px 20px;
+}
+.left_section{
+    width: 50%;
+    padding: 0px 20px;
+}
+@media (max-width:1300px) {
+    .right_section{
+        width: 60%;
+        padding: 0px 20px;
+    }
+    .left_section{
+        width: 40%;
+        padding: 0px 20px;
+    }
+}
+@media (max-width:1150px) {
+    .right_section{
+        width: 100%;
+    }
+    .right_section h1{
+        text-align: center;
+    }
+    .headerButtons{
+        text-align: center;
+    }
     .level_goals .goal{
         width: 100%;
         max-width: 550px;

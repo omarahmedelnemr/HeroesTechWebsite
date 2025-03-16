@@ -44,6 +44,7 @@
 
  #TimeLineSectionContainer{
     padding: 20px;
+    padding-top: 100px;
  }
 
 
@@ -236,10 +237,8 @@
     background-color: #4ab0b0;
 }
 
-
-.CourseSection img{
-    width: 90%;
-    margin: auto;
+.CourseSection .mx500{
+    max-width: 500px;
 }
 .CourseSection{
     display: none;
@@ -261,95 +260,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-.timelineImages{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 60%;
-    /* margin: 20px 0px; */
-}
-.levelContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 20px 0px;
-    /* width: 100%; */
-    flex-basis: 40%;
-
-}
-.level_goals{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0px;
     width: 100%;
+}
 
-}
-.level_goals .goal{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 10px 0px;
-    padding: 10px 5px;
-    background-color:#27beb7 ;
-    color: white;
-    font-family: "El Messiri", cursive;
-    font-weight: 600;
-    width: 600px;
-    /* min-width: 500px; */
-
-}
-.arBody .level_goals .goal{
-    border-radius: 10px 70px 70px 10px;
-    padding-left: 10px;
-}
-.enBody .level_goals .goal{
-    border-radius: 70px 10px 10px 70px;
-    padding-right: 10px;
-}
-.level_goals .goal .goal_icon{
-    margin: 0px 10px;
-    color: #5ad2d2;
-    background-image: linear-gradient(0deg, white, #e7e7e7);
-    padding: 24px;
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    border-color: white;
-    font-size: 2rem;
-    color: #bebebe;
-
-}
-.level_goals .goal .border-wrap{
-    background-image: linear-gradient(90deg, white, #e7e7e7);
-    padding: 5px;
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-.arBody .level_goals .goal .border-wrap{
-    margin-left: 10px;
-}
-.enBody .level_goals .goal .border-wrap{
-    margin-left: 10px;
-}
-.level_goals .goal span{
-    font-size: 1.5rem;
-}
 .CourseSection .timelineSmall{
     display: none;
     width: 60%;
@@ -357,17 +270,22 @@
 .CourseSection .timelineXSmall{
     display: none;
 }
+
+
 @media (max-width:1000px) {
     .CourseSection .timelineSmall{
         display: block;
     }
-    
+    .CourseSection .timelineSmall.mx500{
+        width: 80%;
+    }
     .CourseSection .timelineBig{
         display: none;
     }
     .CourseSection .timelineXSmall{
         display: none;
     }
+    
 }
 
 @media (max-width:790px) {

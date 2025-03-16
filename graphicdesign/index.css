@@ -4,9 +4,10 @@
 }
 
 .CourseSection img{
-    width: 90%;
+    width: 60%;
     margin: auto;
 }
+
 
 
 .timelineImages{
@@ -21,7 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     margin: 20px 0px;
     /* width: 100%; */
     flex-basis: 40%;
@@ -43,7 +44,6 @@
     align-items: center;
     margin: 10px 0px;
     padding: 10px 5px;
-    background-color:#27beb7 ;
     color: white;
     font-family: "El Messiri", cursive;
     font-weight: 600;
@@ -51,6 +51,18 @@
     /* min-width: 500px; */
 
 }
+.level_goals .goal.green{
+   background-color: #27beb7;
+    
+}
+.level_goals .goal.rose{
+   background-color: #f73182;
+}
+.level_goals .goal.yellow{
+    background-color: #f8d367;
+   color: #f73182;
+
+ }
 .arBody .level_goals .goal{
     border-radius: 10px 70px 70px 10px;
     padding-left: 10px;
@@ -98,11 +110,39 @@
     font-size: 1.5rem;
 }
 
-
-
-
-@media (max-width:1500px) {
-    
+.w-80{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.right_section{
+    width: 50%;
+    padding: 0px 20px;
+}
+.left_section{
+    width: 50%;
+    padding: 0px 20px;
+}
+@media (max-width:1300px) {
+    .right_section{
+        width: 60%;
+        padding: 0px 20px;
+    }
+    .left_section{
+        width: 40%;
+        padding: 0px 20px;
+    }
+}
+@media (max-width:1150px) {
+    .right_section{
+        width: 100%;
+    }
+    .right_section h1{
+        text-align: center;
+    }
+    .headerButtons{
+        text-align: center;
+    }
     .level_goals .goal{
         width: 100%;
         max-width: 550px;

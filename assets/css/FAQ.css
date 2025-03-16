@@ -10,7 +10,10 @@
     /* height: 100vh; */
     padding: 20px;
 }
+.arBody #FAQ{
+    font-family: "El Messiri", cursive;
 
+}
 .faq-container {
     width: 100%;
     /* max-width: 700px; */

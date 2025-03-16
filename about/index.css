@@ -18,3 +18,7 @@
 .deco-green-diamond {
     z-index: 1;
 }
+
+#aboutSection .Contact_Button{
+    text-align: start;
+}
